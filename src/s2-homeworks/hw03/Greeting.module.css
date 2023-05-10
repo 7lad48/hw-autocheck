@@ -16,7 +16,7 @@
     margin-top: 7px;
 }
 
-input {
+.input {
     border: 1px solid #D1D1D1;
     border-radius: 5px;
     padding: 5px 12px;
@@ -25,7 +25,7 @@ input {
     width: 372px;
 }
 
-input:focus {
+.input:focus {
     outline: none;
 }
 
