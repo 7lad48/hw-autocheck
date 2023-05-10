@@ -25,7 +25,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = s.errorInput // need to fix with (?:) ((error - border red;
+    const inputClass = error ? s.errorInput : undefined // need to fix with (?:) ((error - border red;
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
@@ -57,7 +57,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     className={s.button}
                     disabled={!name.trim()}
                 >
-                    add
+                    Add
                 </button>
             </div>
 
