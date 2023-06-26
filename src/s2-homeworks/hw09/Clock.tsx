@@ -44,13 +44,12 @@ function Clock() {
             <div
                 id={'hw9-watch'}
                 className={s.watch}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
             >
                 <span id={'hw9-day'}>{stringDay}</span>,{' '}
                 <span id={'hw9-time'}>
-                    <strong
-                        onMouseEnter={onMouseEnter}
-                        onMouseLeave={onMouseLeave}
-                    >{stringTime}</strong>
+                    <strong>{stringTime}</strong>
                 </span>
             </div>
 
