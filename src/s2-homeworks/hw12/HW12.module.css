@@ -13,11 +13,18 @@
     --background: #212A34;
 }
 
-html {
+html, .select {
     background-color: var(--background);
     color: var(--color);
 }
-
+.hw{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
 .select {
+    min-width: 160px;
+    margin-top: 10px;
+}
+.text{
 
 }
