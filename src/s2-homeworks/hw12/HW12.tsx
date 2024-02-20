@@ -28,7 +28,7 @@ const HW12 = () => {
             themeId: number
         }
     }
-    const themeId = useSelector<StateType>(state => state.theme.themeId)
+    const themeId = useSelector<StateType>(state => state.theme.themeId) as number
     const dispatch = useDispatch()
     const change = (id: number) => { // дописать функцию
         dispatch(changeThemeId(id))
@@ -51,6 +51,7 @@ const HW12 = () => {
                     // сделать переключение тем
                     options={themes}
                     onChangeOption={change}
+                    themeId={themeId}
                 />
             </div>
         </div>

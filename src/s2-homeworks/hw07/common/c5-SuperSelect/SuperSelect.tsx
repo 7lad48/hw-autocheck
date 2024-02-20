@@ -14,6 +14,7 @@ type DefaultSelectPropsType = DetailedHTMLProps<
 type SuperSelectPropsType = DefaultSelectPropsType & {
     options?: SelectType[]
     onChangeOption?: (option: number) => void
+    themeId?: number
 }
 
 const SuperSelect: React.FC<SuperSelectPropsType> = ({
@@ -21,6 +22,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
     className,
     onChange,
     onChangeOption,
+    themeId,
     ...restProps
 }) => {
     const mappedOptions: SelectType[] | any = options
@@ -30,6 +32,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                   className={s.option}
                   key={o.id}
                   value={o.id}
+                  selected={o.id === themeId}
               >
                   {o.value}
               </option>
